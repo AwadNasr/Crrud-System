@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD System</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-body-secondary">
+    <div class="w-75 m-auto shadow-lg my-4 rounded-5 bg-light p-4">
+        <h1 class="d display-1 fw-bolder text-center">CRUD System</h1>
+        <label for="">ProductName :</label>
+        <input type="text" id="prodName" class="form-control mb-3" >
+        <label for="">ProductCategory :</label>
+        <input type="text" id="prodCategory" class="form-control mb-3" >
+        <label for="">ProductPrice :</label>
+        <input type="text" id="prodPrice" class="form-control mb-3">
+        <label for="">ProductDescription :</label>
+        <textarea name="text" id="prodDescription" class="form-control mb-3"></textarea>
+        <button class="btn btn-info" id="addProd" >Add Product</button>
+        <button class="btn btn-primary d-none" id="updateProd" >Update Product</button>
+        <button class="btn btn-warning" id="clear">Clear</button>
+    </div>
+    <input type="text" placeholder="Search" onkeyup="search()" id="search" class="form-control w-50 m-auto my-4 shadow-lg">
+    <div class="w-75 m-auto my-5">
+        <table class="table table-info bg-light">
+            <thead>
+                <tr>
+                    <th >Index</th>
+                    <th >Name</th>
+                    <th >Category</th>
+                    <th >Price</th>
+                    <th >Description</th>
+                    <th >Update</th>
+                    <th >Clear</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
